@@ -1,0 +1,4 @@
+skills/atelier/estilos/*.md
+!skills/atelier/estilos/README.md
+.taste-skill/
+node_modules/
