@@ -137,3 +137,7 @@ O Atelier é construído sobre o trabalho de outras pessoas:
 - [Refero Styles](https://styles.refero.design): formato DESIGN.md e estilos de referência
 
 Detalhes em [`CREDITOS.md`](skills/atelier/CREDITOS.md).
+
+## Licença
+
+[MIT](LICENSE). As partes em `vendor/` mantêm as licenças originais de cada projeto.
