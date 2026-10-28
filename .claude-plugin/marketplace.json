@@ -1,0 +1,8 @@
+{
+  "name": "atelier",
+  "owner": { "name": "unmartim" },
+  "metadata": { "description": "Atelier: sistema de design para Claude Code." },
+  "plugins": [
+    { "name": "atelier", "source": "./", "description": "Cria, melhora e revisa interfaces e peças visuais com acabamento de produto real.", "version": "1.0.0", "category": "design" }
+  ]
+}
