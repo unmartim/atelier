@@ -1,6 +1,6 @@
 ---
 name: atelier
-description: Atelier, sistema de design para criar, melhorar e revisar interfaces e peças visuais com acabamento de produto real — landing pages, sites, dashboards, telas de app, componentes (botão, sidebar, formulário, tabela), design system/tokens, carrosséis de Instagram, posts e apresentações. Une 23 estilos de referência (DESIGN.md de Apple, Linear, Notion, Ramp, Revolut…), direção de arte anti-"cara de IA", inspetor em navegador real, base de UX/acessibilidade e checagem de responsivo. Use sempre que o pedido envolver criar, redesenhar, melhorar, deixar bonito, revisar ou auditar qualquer tela, página, componente ou arte — inclusive quando disserem que algo está genérico, feio ou "com cara de IA".
+description: Atelier, sistema de design para criar, melhorar e revisar interfaces e peças visuais com acabamento de produto real — landing pages, sites, dashboards, telas de app, componentes (botão, sidebar, formulário, tabela), design system/tokens, carrosséis de Instagram, posts e apresentações. Une 23 estilos de referência (DESIGN.md de Apple, Linear, Notion, Ramp, Revolut…), direção de arte anti-"cara de IA", inspetor em navegador real, base de UX/acessibilidade e checagem de responsivo. Use sempre que o pedido envolver criar, redesenhar, melhorar, deixar bonito, revisar ou auditar qualquer tela, página, componente ou arte — inclusive quando disserem que algo está genérico, feio ou "com cara de IA", ou que uma landing page não converte.
 example-prompt: Melhora a sidebar do painel da Doctor One, está com cara de template.
 ---
 
@@ -19,17 +19,23 @@ Objetivo: peças que parecem feitas por um time de produto de ponta, não por IA
 | Carrossel, post, story, arte | **Social** | `references/carrossel.md` |
 | Tokens, tema claro/escuro, biblioteca de componentes | **Sistema** | `references/tokens.md` |
 
+**Página que precisa vender** (landing, venda, captura, preço) em qualquer modo: siga também
+`references/conversao.md`. A skill parceira `lp-validate` decide público, mensagem, narrativa, prova e CTA;
+o Atelier decide o visual. Contexto antes de pixel.
+
 Na dúvida entre Criar e Melhorar: se já existe código ou tela, é **Melhorar**. Nunca redesenhe o site
 inteiro quando pediram uma peça.
 
 ## 2. Quem manda (ordem de precedência)
 
 1. **O pedido do usuário** e a marca do cliente (`marcas/<cliente>.md`).
-2. **O design system que o projeto já tem** (tema, tokens, componentes) — no modo Melhorar.
-3. **O estilo de referência escolhido** (`estilos/<id>.md`). Se ele usa algo que as regras da casa
+2. **Em página que precisa vender: o briefing e o diagnóstico da `lp-validate`** para público, mensagem,
+   ordem das seções, prova, oferta e CTA (`references/conversao.md`).
+3. **O design system que o projeto já tem** (tema, tokens, componentes) — no modo Melhorar.
+4. **O estilo de referência escolhido** (`estilos/<id>.md`). Se ele usa algo que as regras da casa
    proíbem (eyebrow, numeração, mono), o estilo vence: é escolha real de uma marca real, não costume de IA.
-4. **As regras da casa** (`references/regras-da-casa.md`) — valem onde nada acima decidiu.
-5. **As bases de consulta** (`vendor/uiux`, `vendor/taste/library`) — sugestões, nunca ordens. Confira se
+5. **As regras da casa** (`references/regras-da-casa.md`) — valem onde nada acima decidiu.
+6. **As bases de consulta** (`vendor/uiux`, `vendor/taste/library`) — sugestões, nunca ordens. Confira se
    a sugestão serve ao produto antes de usar.
 
 ## 3. Modo Criar
@@ -41,6 +47,7 @@ inteiro quando pediram uma peça.
    (nome e o que significa, lugar, números reais, restrições, materiais, rituais, objetos impressos do
    mundo dele). É daqui que vem a ideia.
 3. **Argumento.** Liste a página como afirmações com prova, uma linha por seção. Seção sem afirmação sai.
+   Em página que vende, o argumento é o esqueleto da narrativa da `lp-validate brief` (`references/conversao.md`).
 4. **Direção.** Escolha o estilo base em `catalogo.md` (1 a 3 candidatos, com motivo). Se nenhum servir,
    gere direções com `node vendor/taste/scripts/draw.mjs --sector <setor> --brief "<assunto>" --options 3`.
    Para referência de UX, paleta ou tipografia por tipo de produto:
@@ -105,6 +112,7 @@ Sem algum deles: use o que houver, tire screenshots como puder e diga o que não
 | `references/escrita.md` | Texto de interface e de página |
 | `references/tokens.md` | Tokens, tema, componentes, design system |
 | `references/responsivo.md` | Breakpoints, container queries, tipografia fluida |
+| `references/conversao.md` | Landing e páginas de venda: integração com a `lp-validate` |
 | `references/receitas.md` | Estrutura por tipo de peça |
 | `references/anti-padroes.md` | Antes de entregar |
 | `references/carrossel.md` | Social |

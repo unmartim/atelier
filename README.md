@@ -43,6 +43,22 @@ O Atelier troca esses padrões por decisões:
 **Melhorar não é redesenhar.** Pediu o botão, muda o botão. Problema no tema inteiro? O Atelier avisa e
 propõe, não altera sozinho.
 
+## Landing pages que vendem
+
+Bonita não basta: landing precisa converter. Para isso, o Atelier trabalha junto com a skill
+**[lp-validate](https://github.com/leonardoperin14/skill-validatelp-richard)**, que diagnostica por que uma
+LP não converte usando o framework de 10 etapas de Richard ([@richardrx](https://x.com/richardrx)).
+
+| Etapa | Quem faz |
+|---|---|
+| Público, origem do tráfego, nível de consciência, promessa | `lp-validate` (`brief`) |
+| Narrativa, prova e objeções, oferta, CTA, formulário | `lp-validate` |
+| Estilo, tipografia, cor, layout, imagens, responsivo | Atelier |
+| Diagnóstico depois do build | `lp-validate` (`diagnose`) + portão do Atelier |
+
+**Contexto antes de pixel:** em página de venda, o Atelier não desenha o hero antes de saber quem chega,
+de onde e sabendo o quê. Sem a `lp-validate` instalada, ele faz essas perguntas por escrito.
+
 ## Instalação
 
 ### Com o `npx skills`
@@ -63,6 +79,13 @@ npx skills add https://github.com/unmartim/atelier --skill atelier
 ```bash
 git clone https://github.com/unmartim/atelier.git
 cp -r atelier/skills/atelier ~/.claude/skills/
+```
+
+### Skills parceiras (recomendadas)
+
+```bash
+# diagnóstico de conversão de landing pages
+git clone https://github.com/leonardoperin14/skill-validatelp-richard.git ~/.claude/skills/lp-validate
 ```
 
 ### Requisitos
@@ -135,6 +158,7 @@ O Atelier é construído sobre o trabalho de outras pessoas:
 - [frontend-design](https://github.com/anthropics/skills) da Anthropic: ideias de processo e escrita (Apache-2.0)
 - [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines) da Vercel, buscadas na hora da revisão
 - [Refero Styles](https://styles.refero.design): formato DESIGN.md e estilos de referência
+- [lp-validate](https://github.com/leonardoperin14/skill-validatelp-richard) de leonardoperin14, sobre o framework de Richard (@richardrx): skill parceira de conversão, usada junto e não copiada
 
 Detalhes em [`CREDITOS.md`](skills/atelier/CREDITOS.md).
 
