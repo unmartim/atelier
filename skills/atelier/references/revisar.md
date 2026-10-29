@@ -4,7 +4,7 @@ Duas camadas: **o que se vê** (render) e **o que está no código**.
 
 ## 0. Landing ou página de venda
 
-Rode primeiro a `lp-validate` em `diagnose` (veja `conversao.md`). Se o vazamento for de público ou
+Rode primeiro o modo Converter em `diagnose` (veja `conversao.md`). Se o vazamento for de público ou
 mensagem, isso vem antes de qualquer achado visual.
 
 ## 1. Render

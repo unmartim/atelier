@@ -18,10 +18,11 @@ Objetivo: peças que parecem feitas por um time de produto de ponta, não por IA
 | Revisar, auditar, "o que está errado aqui?" | **Revisar** | `references/revisar.md` |
 | Carrossel, post, story, arte | **Social** | `references/carrossel.md` |
 | Tokens, tema claro/escuro, biblioteca de componentes | **Sistema** | `references/tokens.md` |
+| "Por que minha LP não converte?", hero, copy, CTA, formulário, briefing de landing | **Converter** | `references/conversao.md` |
 
-**Página que precisa vender** (landing, venda, captura, preço) em qualquer modo: siga também
-`references/conversao.md`. A skill parceira `lp-validate` decide público, mensagem, narrativa, prova e CTA;
-o Atelier decide o visual. Contexto antes de pixel.
+**Página que precisa vender** (landing, venda, captura, preço): o modo Converter entra junto com Criar,
+Melhorar ou Revisar. Ele decide público, mensagem, narrativa, prova e CTA; o restante do Atelier decide o
+visual. Contexto antes de pixel.
 
 Na dúvida entre Criar e Melhorar: se já existe código ou tela, é **Melhorar**. Nunca redesenhe o site
 inteiro quando pediram uma peça.
@@ -29,8 +30,8 @@ inteiro quando pediram uma peça.
 ## 2. Quem manda (ordem de precedência)
 
 1. **O pedido do usuário** e a marca do cliente (`marcas/<cliente>.md`).
-2. **Em página que precisa vender: o briefing e o diagnóstico da `lp-validate`** para público, mensagem,
-   ordem das seções, prova, oferta e CTA (`references/conversao.md`).
+2. **Em página que precisa vender: o modo Converter** (briefing e diagnóstico F1–F8) para público,
+   mensagem, ordem das seções, prova, oferta e CTA (`references/conversao.md`).
 3. **O design system que o projeto já tem** (tema, tokens, componentes) — no modo Melhorar.
 4. **O estilo de referência escolhido** (`estilos/<id>.md`). Se ele usa algo que as regras da casa
    proíbem (eyebrow, numeração, mono), o estilo vence: é escolha real de uma marca real, não costume de IA.
@@ -47,7 +48,7 @@ inteiro quando pediram uma peça.
    (nome e o que significa, lugar, números reais, restrições, materiais, rituais, objetos impressos do
    mundo dele). É daqui que vem a ideia.
 3. **Argumento.** Liste a página como afirmações com prova, uma linha por seção. Seção sem afirmação sai.
-   Em página que vende, o argumento é o esqueleto da narrativa da `lp-validate brief` (`references/conversao.md`).
+   Em página que vende, o argumento é o esqueleto da narrativa do Converter `brief` (`references/conversao.md`).
 4. **Direção.** Escolha o estilo base em `catalogo.md` (1 a 3 candidatos, com motivo). Se nenhum servir,
    gere direções com `node vendor/taste/scripts/draw.mjs --sector <setor> --brief "<assunto>" --options 3`.
    Para referência de UX, paleta ou tipografia por tipo de produto:
@@ -112,7 +113,7 @@ Sem algum deles: use o que houver, tire screenshots como puder e diga o que não
 | `references/escrita.md` | Texto de interface e de página |
 | `references/tokens.md` | Tokens, tema, componentes, design system |
 | `references/responsivo.md` | Breakpoints, container queries, tipografia fluida |
-| `references/conversao.md` | Landing e páginas de venda: integração com a `lp-validate` |
+| `references/conversao.md` → `references/lp/` | Modo Converter: framework de 10 etapas, diagnóstico, 16 movimentos, rubricas |
 | `references/receitas.md` | Estrutura por tipo de peça |
 | `references/anti-padroes.md` | Antes de entregar |
 | `references/carrossel.md` | Social |

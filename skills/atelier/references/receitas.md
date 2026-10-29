@@ -4,8 +4,8 @@ A receita dá a estrutura; o estilo dá a aparência.
 
 ## Landing page
 
-> Página que precisa vender: antes desta receita, siga `conversao.md`. O briefing da `lp-validate`
-> substitui a ordem genérica abaixo.
+> Página que precisa vender: antes desta receita, rode o modo Converter `brief` (`conversao.md`). O
+> esqueleto da narrativa dele substitui a ordem genérica abaixo.
 
 1. **Hero:** promessa específica (o quê + para quem + resultado), subtítulo de 1–2 linhas, um CTA primário,
    prova visual do produto (screenshot real, mockup ou render). Sem carrossel no hero.
