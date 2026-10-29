@@ -2,6 +2,11 @@
 
 Duas camadas: **o que se vê** (render) e **o que está no código**.
 
+## 0. Landing ou página de venda
+
+Rode primeiro o modo Converter em `diagnose` (veja `conversao.md`). Se o vazamento for de público ou
+mensagem, isso vem antes de qualquer achado visual.
+
 ## 1. Render
 
 - Página: `node vendor/taste/scripts/inspect.mjs <url>` (`--app` para telas de app) e abra todas as imagens.

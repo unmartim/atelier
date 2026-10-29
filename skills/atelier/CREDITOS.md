@@ -9,6 +9,7 @@ O Atelier combina material próprio com estas fontes:
 | [wshobson/agents](https://github.com/wshobson/agents) | `vendor/wshobson/` (design-system-patterns, responsive-design) | MIT — `vendor/wshobson/LICENSE` |
 | [anthropics/skills — frontend-design](https://github.com/anthropics/skills) | Ideias de processo e escrita, reescritas em `SKILL.md` e `references/escrita.md` | Apache-2.0 |
 | [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines) | Buscado na hora da revisão; resumo próprio em `references/revisar.md` | do autor |
+| Framework de Richard ([@richardrx](https://x.com/richardrx)) | `references/lp/framework.md` (transcrição do artigo) e derivações em `references/lp/` e `references/conversao.md` | Reuso permitido pelo autor **exceto** para apostas, cassino e marketing predatório. O texto do artigo não é coberto pela licença MIT do Atelier |
 | [Refero Styles](https://styles.refero.design) | `estilos/` (DESIGN.md baixados por cada usuário; não incluídos no repositório) | da Refero |
 
 Os arquivos em `vendor/` são cópias sem alteração, exceto `SKILL.md` → `GUIA.md` (para não virarem skills

@@ -30,7 +30,7 @@ O Atelier troca esses padrões por decisões:
 - **Olhar o que foi feito.** Screenshots obrigatórios, crítica com nota e até 3 rodadas de correção.
 - **Nada inventado.** Sem números, depoimentos, logos ou clientes falsos.
 
-## Cinco modos
+## Seis modos
 
 | Você pede | Modo | O que acontece |
 |---|---|---|
@@ -38,10 +38,34 @@ O Atelier troca esses padrões por decisões:
 | "Melhora a sidebar / o botão / esta tela" | **Melhorar** | Lê o design system do projeto, diagnostica com medidas, muda o mínimo e mostra antes/depois |
 | "Revisa o design disso" | **Revisar** | Render + crítica + checklist de código no formato `arquivo:linha`, sem mexer em nada |
 | "Carrossel / post sobre…" | **Social** | Slides em HTML, export nativo 2160×2700, galeria de versões, `carrossel.zip` |
+| "Por que minha LP não converte?" | **Converter** | Diagnóstico F1–F10: onde a venda vaza, evidência e material pronto para corrigir |
 | "Monta os tokens / tema escuro" | **Sistema** | Tokens primitivo → semântico → componente, claro e escuro validados |
 
 **Melhorar não é redesenhar.** Pediu o botão, muda o botão. Problema no tema inteiro? O Atelier avisa e
 propõe, não altera sozinho.
+
+## Landing pages que vendem
+
+Bonita não basta: landing precisa converter. O **modo Converter** diagnostica por que uma LP não vende
+com o framework de 10 etapas de Richard ([@richardrx](https://x.com/richardrx)). A pergunta não é "verde
+ou azul?", é **"onde essa página está perdendo venda?"**.
+
+| Etapa | O que investiga |
+|---|---|
+| `F1`–`F4` | Contexto do tráfego, ICP, nível de consciência, mensagem |
+| `F5`–`F8` | Estrutura de venda, hero, prova e objeções, fricção e CTA |
+| `F9`–`F10` | Atenção, UI e estranheza com função (aqui entra o visual do Atelier) |
+| `SIS` | A LP no sistema: CAC, conversão, ativação, trial-to-paid, LTV, churn |
+
+Submodos: `diagnose`, `brief`, `hero`, `narrative`, `friction`, `visual`, `full`. Toda resposta é uma
+pirâmide: veredito → 2–3 vazamentos com evidência → **material pronto** (headlines escritas, esqueleto da
+narrativa, mapa de objeções, escada de CTA) → scorecard no apêndice.
+
+**Contexto antes de pixel:** em página de venda, o Atelier não desenha o hero antes de saber quem chega,
+de onde e sabendo o quê.
+
+> 🚫 O modo Converter não pode ser usado para apostas, cassino ou marketing predatório (urgência falsa,
+> prova inventada, dark patterns). É condição do autor do framework.
 
 ## Instalação
 
@@ -135,6 +159,7 @@ O Atelier é construído sobre o trabalho de outras pessoas:
 - [frontend-design](https://github.com/anthropics/skills) da Anthropic: ideias de processo e escrita (Apache-2.0)
 - [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines) da Vercel, buscadas na hora da revisão
 - [Refero Styles](https://styles.refero.design): formato DESIGN.md e estilos de referência
+- [Richard (@richardrx)](https://x.com/richardrx): framework de 10 etapas do modo Converter, do artigo ["Um framework para descobrir por que uma LP não converte"](https://x.com/richardrx/status/2089755232511123628)
 
 Detalhes em [`CREDITOS.md`](skills/atelier/CREDITOS.md).
 
